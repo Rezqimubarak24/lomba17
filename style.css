@@ -1,0 +1,144 @@
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+:root{
+	--secound-color: #a09dab;
+	--main-color: #df2f23;
+	--big-font: 3rem;
+	--h2-font: 2rem;
+	--p-font: 1.1rem;
+}
+
+
+body{
+    background-color: rgb(245, 196, 196);
+}
+
+#atas{
+    height: 70px;
+    background: red;
+    box-shadow: 0 0 5px red;
+    border: 1px solid red;
+    -webkit-animation: top_anim 4.5s infinite;
+    animation: top_anim 4.5s infinite;
+    border-radius: 0 0 3em 0 ;
+}
+#bawah{
+    height: 70px;
+    background: white;
+    border: 1px solid white;
+    box-shadow: 0 0 5px white;
+    -webkit-animation: top_anim 4.5s infinite;
+    animation: top_anim 4.5s infinite;
+    animation-delay: 0.2s;
+    -webkit-animation-delay: 0.2s;
+    border-radius:  0 3em 0 0;
+}
+@-webkit-keyframes top_anim{
+    0%{
+        width: 0%;
+    }
+    30%{
+        width: 30%;
+    }
+    70%{
+        width: 70%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+@keyframes top_anim {
+    0%{
+        width: 0%;
+    }
+    30%{
+        width: 30%;
+    }
+    70%{
+        width: 70%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+.judul{
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: auto;
+    display: flex;
+    margin-top: 100px;
+}
+.judul img{
+    height: auto;
+    max-width: 100%;
+    width: 300px;
+}
+.soekarnohatta{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    align-items: center;
+    grid-gap: 2rem;
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+.soekarnohatta-img img{
+    max-width: 100%;
+    width: 540px;
+    height: auto;
+}
+.soekarnohatta-text h2{
+    font-size: var(--h2-font);
+    font-weight: 500;
+    margin: 8px 0px 25px;
+    line-height: 1.1;
+}
+.soekarnohatta-text h3{
+    color: var(--main-color);
+    font-size: 20px;
+    font-weight: 500;
+}
+.soekarnohatta-text p{
+    max-width: 550px;
+    font-size: var(--p-font);
+    color: var(--secound-color);
+    line-height: 28px;
+    margin-bottom: 45px;
+}
+.lomba-lomba{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+    grid-gap: 2rem;
+    align-items: center;
+    margin-top: 5rem;
+    text-align: center;
+    cursor: pointer;
+}
+.heading{
+    text-align: center;
+}
+.col{
+    position: relative;
+}
+.col img{
+    max-width: 100%;
+    width: 550px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 12px;
+}
+.fototokoh img{
+    max-width: 100%;
+    width: 60px;
+    height: auto;
+    margin-bottom: 20px;
+}
+.tokoh2{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+    grid-gap: 2rem;
+    align-items: center;
+    text-align: center;
+}
